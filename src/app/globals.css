@@ -1,26 +1,39 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+	--dashboard-card: #f7f7f7;
+	--dashboard-border: #ebebeb;
+	--dashboard-divider: #d1d1d1;
+	--dashboard-text-secondary: #5c5c5c;
+	--dashboard-primary: #335cff;
+	--dashboard-success: #1fc16b;
+	--dashboard-danger: #fb3748;
+	--dashboard-accent: #7d52f4;
+	--dashboard-white: #ffffff;
+	--dashboard-offcolor: #a3a3a3;
+	--dashboard-thin-blue: #ebf1ff;
+	--dashboard-title: #5c5c5c;
+	--dashboard-dark: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+	:root {
+		--dashboard-card: #1a1a1a;
+		--dashboard-border: #333333;
+		--dashboard-divider: #444444;
+		--dashboard-text-secondary: #aaaaaa;
+		--dashboard-primary: #335cff;
+		--dashboard-success: #1fc16b;
+		--dashboard-danger: #fb3748;
+		--dashboard-accent: #7d52f4;
+		--dashboard-white: #ffffff;
+	}
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+	background: var(--background);
+	color: var(--foreground);
+	font-family: Arial, Helvetica, sans-serif;
 }
