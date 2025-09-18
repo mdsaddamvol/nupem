@@ -39,6 +39,37 @@ export default function Home() {
 		},
 	];
 
+	const sampleRequests = [
+		{
+			id: "1",
+			type: "account_review",
+			name: "Acme Corp",
+			client: "John Doe",
+			status: "Pending",
+		},
+		{
+			id: "2",
+			type: "account_review",
+			name: "Beta Ltd",
+			client: "Jane Smith",
+			status: "Approved",
+		},
+		{
+			id: "3",
+			type: "share_remove",
+			name: "Gamma Inc",
+			client: "Alice Johnson",
+			status: "Rejected",
+		},
+		{
+			id: "4",
+			type: "account_review",
+			name: "Delta Co",
+			client: "Bob Williams",
+			status: "Pending",
+		},
+	];
+
 	return (
 		<div className='flex flex-col  justify-start min-h-screen p-8 space-y-8'>
 			{/* Section Title */}
@@ -58,7 +89,7 @@ export default function Home() {
 				<DataCountsSection />
 			</div>
 			<div className='w-full max-w-[1200px]'>
-				<DashboardRequests requests={[]} />
+				<DashboardRequests requests={sampleRequests} />
 			</div>
 		</div>
 	);
