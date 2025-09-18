@@ -85,7 +85,7 @@ export default function FinanceCard({
 
 		// Create vertical gradient (top → bottom)
 		const gradient = ctx.createLinearGradient(0, 0, 0, height * 0.8); // Stop before label zone
-		gradient.addColorStop(0, `rgba(${r}, ${g}, ${b}, 0.3)`);
+		gradient.addColorStop(0, `rgba(${r}, ${g}, ${b}, 0.8)`);
 		gradient.addColorStop(1, "rgba(255, 255, 255, 0)");
 
 		// Clip to wave shape and fill
